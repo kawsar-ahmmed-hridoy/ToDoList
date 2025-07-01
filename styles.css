@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e9f7fd;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -61,15 +61,19 @@ button:hover {
 
 ul {
     list-style-type: none;
-    padding: 0;
+    padding: 5px;
 }
 
 li {
     background: white;
-    margin: 5px 0;
-    padding: 10px;
+    margin: 5px ;
+    padding-inline-start: 15px;
+    padding-inline-end: 10px;
     border: 1px solid #eee;
-    border-radius: 4px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #count {
@@ -78,4 +82,23 @@ li {
     background: white;
     border: 1px solid #eee;
     border-radius: 4px;
+    font-style: normal;
+}
+.edit-btn, .delete-btn {
+    font-size: 1em;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #10a9cb;
+    color: white;
+    border: none;
+    box-shadow: #7ebacc 0px 0px 5px 0px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit-btn i, .delete-btn i {
+    pointer-events: none;
 }
